@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
+import './ListaEspecies.css'; // Importamos el archivo CSS
 
 const ListaEspecies = () => {
   const [especies, setEspecies] = useState([]);
@@ -19,10 +20,10 @@ const ListaEspecies = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Lista de Especies</h2>
+    <div className="lista-especies-container">
+      <h2 className="titulo">Lista de Especies</h2>
       {especies.map((especie) => (
-        <div key={especie.id}>
+        <div key={especie.id} className="especie-item">
           <p><strong>Nombre Científico:</strong> {especie.nombreCientifico}</p>
           <p><strong>Nombre Común:</strong> {especie.nombreComun}</p>
           <p><strong>Familia:</strong> {especie.familia}</p>

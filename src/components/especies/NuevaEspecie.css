@@ -1,0 +1,48 @@
+/* NuevaEspecie.css */
+.form-especie {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .input-field:focus {
+    border-color: #4f6dff;
+    box-shadow: 0 0 5px rgba(79, 109, 255, 0.5);
+  }
+  
+  .submit-button {
+    background-color: #4f6dff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #3c56e8;
+  }
+  
+  .submit-button:active {
+    background-color: #3348c2;
+  }
+  

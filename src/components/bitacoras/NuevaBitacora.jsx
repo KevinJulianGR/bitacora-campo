@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
+import './NuevaBitacora.css'; // Importamos el archivo CSS
 
 const NuevaBitacora = () => {
   const [titulo, setTitulo] = useState("");
@@ -47,12 +48,12 @@ const NuevaBitacora = () => {
   };
 
   return (
-    <form onSubmit={agregarBitacora}>
+    <form onSubmit={agregarBitacora} className="formulario-bitacora">
       <input value={titulo} onChange={(e) => setTitulo(e.target.value)} placeholder="Título" required />
       <input value={clima} onChange={(e) => setClima(e.target.value)} placeholder="Clima" required />
       <input value={humedad} onChange={(e) => setHumedad(e.target.value)} placeholder="Humedad" required />
       <input value={temperatura} onChange={(e) => setTemperatura(e.target.value)} placeholder="Temperatura" required />
-      <input value={habitat} onChange={(e) => setHabitat(e.target.value)} placeholder="Habitat" required />
+      <input value={habitat} onChange={(e) => setHabitat(e.target.value)} placeholder="Hábitat" required />
       <input
         value={localizacion.lat}
         onChange={(e) => setLocalizacion({ ...localizacion, lat: e.target.value })}

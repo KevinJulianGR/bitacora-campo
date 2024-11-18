@@ -1,0 +1,69 @@
+/* Home.css */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #4f6dff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .menu li a:hover,
+  .menu li a.active {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  main {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animación para la transición de la ruta activa */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu li a {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

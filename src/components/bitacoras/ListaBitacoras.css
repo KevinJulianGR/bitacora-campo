@@ -1,0 +1,47 @@
+/* ListaBitacoras.css */
+.bitacoras-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .bitacora-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .bitacora-item p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+  
+  .clima-container p {
+    margin: 5px 0;
+  }
+  
+  hr {
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para los elementos de especies */
+  .bitacora-item span {
+    color: #4f6dff;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
