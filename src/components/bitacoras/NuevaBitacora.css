@@ -1,47 +1,51 @@
-/* NuevaBitacora.css */
 .formulario-bitacora {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .formulario-bitacora input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .formulario-bitacora input:focus {
-    outline: none;
-    border-color: #4f6dff;
-    box-shadow: 0 0 5px rgba(79, 109, 255, 0.3);
-  }
-  
-  .formulario-bitacora button {
-    padding: 12px 20px;
-    background-color: #4f6dff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .formulario-bitacora button:hover {
-    background-color: #4057d0;
-  }
-  
-  .formulario-bitacora button:active {
-    background-color: #3348b1;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-bitacora input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.formulario-bitacora input:focus {
+  outline: none;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+  background-color: white;
+}
+
+.formulario-bitacora button {
+  padding: 1rem 2rem;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario-bitacora button:hover {
+  background-color: #3b4fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+
+.formulario-bitacora button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(67, 97, 238, 0.1);
+}

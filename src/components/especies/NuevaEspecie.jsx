@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import './NuevaEspecie.css'; // Importamos el archivo CSS
+import './NuevaEspecie.css'; 
 
 const NuevaEspecie = () => {
   const [nombreCientifico, setNombreCientifico] = useState("");

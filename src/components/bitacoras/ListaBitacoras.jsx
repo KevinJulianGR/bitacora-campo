@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import './ListaBitacoras.css'; // Importamos el archivo CSS
+import './ListaBitacoras.css'; 
 
 const ListaBitacoras = () => {
   const [bitacoras, setBitacoras] = useState([]);

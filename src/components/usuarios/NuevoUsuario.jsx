@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import { useNavigate } from 'react-router-dom';
 import { registerUser } from '../../services/auth-services';
+import './NuevoUsuario.css';
 
 const NuevoUsuario = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [rol, setRol] = useState('usuario'); // Nuevo campo
+  const [rol, setRol] = useState('colaborador');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -86,8 +87,9 @@ const NuevoUsuario = () => {
                 onChange={(e) => setRol(e.target.value)}
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               >
-                <option value="usuario">Usuario</option>
-                <option value="admin">Administrador</option>
+                <option value="administrador">Administrador</option>
+                <option value="investigador">Investigador</option>
+                <option value="colaborador">Colaborador</option>
               </select>
             </div>
           </div>

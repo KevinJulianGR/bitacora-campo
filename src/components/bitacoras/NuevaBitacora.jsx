@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import './NuevaBitacora.css'; // Importamos el archivo CSS
+import './NuevaBitacora.css'; 
 
 const NuevaBitacora = () => {
   const [titulo, setTitulo] = useState("");

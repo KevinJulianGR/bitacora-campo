@@ -1,14 +1,14 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
-import { auth, db } from '../firebase/firebase'; // Ajusta la ruta según tu estructura
+import { auth, db } from '../firebase/firebase'; 
 
 export const registerUser = async (nombre, correo, contrasena, rol = 'usuario') => {
   try {
-    // 1. Crear usuario en Authentication
+    
     const userCredential = await createUserWithEmailAndPassword(auth, correo, contrasena);
     const user = userCredential.user;
 
-    // 2. Crear documento en la colección usuarios de Firestore
+    
     await setDoc(doc(db, 'usuarios', user.uid), {
       nombre,
       correo,

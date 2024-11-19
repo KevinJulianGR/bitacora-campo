@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import './ListaEspecies.css'; // Importamos el archivo CSS
+import './ListaEspecies.css';
 
 const ListaEspecies = () => {
   const [especies, setEspecies] = useState([]);

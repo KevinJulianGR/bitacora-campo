@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./firebase/firebase"; // Asegúrate de tener la ruta correcta
-import Login from "./components/auth/Login"; // Ruta correcta para el Login
+import { auth } from "./firebase/firebase"; 
+import Login from "./components/auth/Login"; 
 import NuevoUsuario from "./components/usuarios/NuevoUsuario";
 import ListaBitacoras from './components/bitacoras/ListaBitacoras';
 import NuevaBitacora from './components/bitacoras/NuevaBitacora';
 import ListaEspecies from './components/especies/ListaEspecies';
 import NuevaEspecie from './components/especies/NuevaEspecie';
-import './App.css'; // Importamos el archivo CSS
+import './App.css'; 
+import paisaje from './assets/paisaje.avif';
 
 const App = () => {
   const [authenticated, setAuthenticated] = useState(false);
@@ -51,7 +52,7 @@ const App = () => {
             </Routes>
           </>
         ) : (
-          // Si no está autenticado, mostrar login
+         
           <Routes>
             <Route path="/" element={<Login setAuthenticated={setAuthenticated} />} />
             <Route path="/nuevo-usuario" element={<NuevoUsuario />} />
@@ -67,7 +68,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <h1>Bienvenido a la Bitácora de Campo</h1>
-      <p>Desde aquí puedes gestionar las bitácoras, especies y usuarios.</p>
+      <p>Desde esta sección tienes la posibilidad de administrar de manera sencilla y 
+        eficiente las bitácoras, las diferentes especies registradas y los usuarios asociados al sistema.
+        </p>
+        <img src={paisaje} alt="Paisaje" />
     </div>
   );
 };
